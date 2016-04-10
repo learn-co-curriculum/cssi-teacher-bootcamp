@@ -14,13 +14,13 @@ Here you'll find:
 
 ### [Course Goals](GOALS.md)
 
-### [Day 1 - Welcome, Code Refresh, Lesson Planning, Feedback](day-01/)
+### [Day 1 - Welcome, Code Refresh, Lesson Planning, Git & Github, Feedback](day-01/)
 
-### [Day 2 - Sinatra, JS, TDD](day-02/)
+### [Day 2 - AppEngine, JS, Teaching](day-02/)
 
-### [Day 3 - More Sinatra and jQuery Projects](day-03/)
+### [Day 3 - More AppEngine, Ideation, Group Projects](day-03/)
 
-### [Day 4 - APIs, Gems, Learn.co Admin, Updating Curriculum](day-04/)
+### [Day 4 - APIs, Modules, Responding to Feedback](day-04/)
 
-### [Day 5 - Debriefing, Community, Communication](day-05/)
-<a href='https://learn.co/lessons/summer-teacher-bootcamp-track-guide' data-visibility='hidden'>View this lesson on Learn.co</a>
+### [Day 5 - Debriefing, Daily Tracking, Community, Communication](day-05/)
+
