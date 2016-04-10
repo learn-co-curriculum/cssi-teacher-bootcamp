@@ -10,7 +10,7 @@
     </tr>
     <tr>
         <td>9:00 - 9:30</td>
-        <td> Todo: Ruby/JS Review (and Class Prep)</td>
+        <td> Todo: Python/JS Review and Class Prep</td>
         <td>
             
         </td>
@@ -22,10 +22,22 @@
         </td>
     </tr>
     <tr>
-        <td>10:30 - 12:30</td>
-        <td> Sinatra Project </td>
+        <td>10:30 - 10:45</td>
+        <td> Break </td>
         <td>
-            <a href="sinatra-project.md">Lecture</a>
+        </td>
+    </tr>
+    <tr>
+        <td>10:45 - 11:45</td>
+        <td> Pair Lesson delivery 2 </td>
+        <td>
+        </td>
+    </tr>
+    <tr>
+        <td>11:45 - 12:30</td>
+        <td> Group Projects and Ideation </td>
+        <td>
+            <a href="group-projects.md">Lecture</a>
         </td>
     </tr>
     <tr>
@@ -43,7 +55,7 @@
     </tr>
     <tr>
         <td>1:30 - 3:20</td>
-        <td> Sinatra Project </td>
+        <td> AppEngine Project </td>
         <td>
         </td>
     </tr>
@@ -55,19 +67,19 @@
     </tr>
     <tr>
         <td>3:30 - 4:30</td>
-        <td> Pair Teaching </td>
-        <td>
-        </td>
-    </tr>
-    <tr>
-        <td>4:30 - 5:30</td>
         <td> Rapid-Fire Teaching Practice </td>
         <td>
         </td>
     </tr>
     <tr>
+        <td>4:30 - 5:30</td>
+        <td> AppEngine Project </td>
+        <td>
+        </td>
+    </tr>
+    <tr>
         <td>5:30 - 6:00</td>
-        <td>Debrief Day 3 + Flatiron Cultural</td>
+        <td>Debrief Day 3 + Cultural</td>
         <td>
         <a href="https://docs.google.com/presentation/d/14vwL5tP813ZT5VPdvahQe6tgLF9GX8BxWRSQZHM2gX8/edit#slide=id.p"> Culture Talk Deck </a>
         <a href="http://programminginspiration.tumblr.com/">Programming Inspiration Materials</a>

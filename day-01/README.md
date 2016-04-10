@@ -37,7 +37,7 @@
     </tr>
     <tr>
         <td>12:45 - 2:00</td>
-        <td> Lesson Planning and prep </td>
+        <td> Lesson Planning and Prep </td>
         <td>
         <a href = "https://docs.google.com/presentation/d/10E7e3ufkw7kStSbFsPCEu5w4kAF51UUj_wsJ6HnvZtw/">Deck</a>
         <br>
@@ -46,23 +46,21 @@
     </tr>
     <tr>
         <td>2:00 - 3:00</td>
-        <td> Ruby/JS Review A </td>
+        <td> Python/JS Review </td>
         <td>
-            <a href="https://learn.co/admin/tracks#/7079/topics/7080?topic_id=7080"> Learn.co Unit<a>
+            
         </td>
     </tr>
     <tr>
         <td>3:00-3:15</td>
-        <td> Break </td>
+        <td>Break</td>
         <td>
         </td>
     </tr>
     <tr>
         <td>3:15 - 5:00</td>
-        <td> Ruby/JS Review Labs B </td>
-            <a href="https://learn.co/admin/tracks#/7079/topics/7080?topic_id=7080"> Learn.co Unit<a>
-        <td>
-        </td>
+        <td>Git and Github Lesson</td>
+        <td></td>
     </tr>
     <tr>
         <td>5:00 - 5:30</td>

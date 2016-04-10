@@ -9,12 +9,8 @@
     </tr>
     <tr>
         <td>9:00 - 9:30</td>
-        <td> Todo: Ruby/JS Review (and Class Prep)
-        <br> 
-            Google Form - Any Q Tuesday
-        </td> 
+        <td> Todo: Python/JS Review and Class Prep</td> 
         <td>
-            <a href="https://docs.google.com/forms/d/1Kswuq23l1B-X5tgJ4OaGBNh-VROexkEUykLcz1OnZHY/viewform?usp=send_form">6/1 Form</a>
         </td>
     </tr>
     <tr>
@@ -24,14 +20,13 @@
         </td>
     </tr>
     <tr>
-        <td>10:30 - 11:00</td>
-        <td> TDD Basics </td>
+        <td>10:30 - 11:30</td>
+        <td> Pair Lesson delivery 2 </td>
         <td>
-            <a href="TDD-lecture.md">Lecture Notes</a>
         </td>
     </tr>
     <tr>
-        <td>11:00 - 12:00</td>
+        <td>11:30 - 12:00</td>
         <td> Code and Lesson Prep </td>
         <td>
         </td>
@@ -53,9 +48,9 @@
     </tr>
     <tr>
         <td>1:15 - 3:00</td>
-        <td> Sinatra part A </td>
+        <td> App Engine part A </td>
         <td>
-            <a href="sinatra.md">Sinatra</a>
+            <a href="app-engine.md">App Engine</a>
         </td>
     </tr>
     <tr>
@@ -65,14 +60,14 @@
         </td>
     </tr>
     <tr>
-        <td>3:15 - 4:15</td>
-        <td> Pair lesson delivery </td>
+        <td>3:15 - 4:00</td>
+        <td> Improv and Icebreakers </td>
         <td>
         </td>
     </tr>
     <tr>
         <td>4:15 - 5:30</td>
-        <td> Sinatra B </td>
+        <td> AppEngine B </td>
         <td>
         </td>
     </tr>
