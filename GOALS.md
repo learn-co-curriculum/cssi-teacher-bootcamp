@@ -10,11 +10,11 @@ Teachers will come in with solid grasp of the command line, HTML, CSS, Javascrip
 ## Our Definition of Success - Facilitators will:
 
 Understand the CSSI curriculum and course arc.
-Support lead and module instructors in ensuring student understanding of CSSI curriculum.
-Spot gaps in lead instructor and module instructor lessons and modify instructional plan accordingly
-Prepare module instructors for their teaching responsibilities through coaching sessions.
-Provide strong teaching feedback to lead instructors and module instructors.
-Develop a classroom culture of supported risk-taking.
-Lead ice-breakers and facilitate the development of group cohesion.
-Develop daily plans and help coordinate lead and module instructor teaching 
++ Support lead and module instructors in ensuring student understanding of CSSI curriculum.
++ Spot gaps in lead instructor and module instructor lessons and modify instructional plan accordingly
++ Prepare module instructors for their teaching responsibilities through coaching sessions.
++ Provide strong teaching feedback to lead instructors and module instructors.
++ Develop a classroom culture of supported risk-taking.
++ Lead ice-breakers and facilitate the development of group cohesion.
++ Develop daily plans and help coordinate lead and module instructor teaching 
 
