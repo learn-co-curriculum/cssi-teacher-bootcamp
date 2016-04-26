@@ -1,4 +1,4 @@
-# Sinatra Project
+# AppEngine Project
 
 + Pair Program
 + Use Sinatra Template
@@ -7,6 +7,7 @@
 + Most of the day activity
 + Presentations at end of day
 + Student Projects
++ 
   + [Insultron 3000](http://insultron.herokuapp.com)  
   + [Mood Foods](http://moodfoods.herokuapp.com/)
   + [Stock Forecast](stock-forecast.herokuapp.com)
