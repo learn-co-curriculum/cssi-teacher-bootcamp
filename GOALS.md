@@ -1,14 +1,11 @@
 # Guiding Principles and Goals
 
 + Imbue teachers with a sense of ownership over curriculum, make them feel empowered to be themselves in the classroom, to launch and iterate and improve.
-+ Ensure teachers are technically equipped to teach FE1 and SE1 on the first day of class (and are on the way to being able to teach SE2/FE2)
-+ Develop a sense of cohesion and community among the teachers - Develop lifelong friends
-+ Instill Flatiron’s values and the Flatiron Pre-college ‘way’ (prioritize fun)
++ Ensure facilitators are technically equipped to support teachers on the first day of class.
 + Teach strong feedback, self-reflection and self-improvement methodologies.
 
 Assumptions:
-Teachers will come in with solid grasp of the command line, Git, HTML, CSS, jQuery, Ruby basics, and exposure to Sinatra.
-
+Teachers will come in with solid grasp of the command line, HTML, CSS, Javascript, Python and exposure to AppEngine.
 
 ## Our Definition of Success - Facilitators will:
 
