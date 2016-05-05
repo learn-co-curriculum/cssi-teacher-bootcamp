@@ -10,4 +10,4 @@ Start with framing that there will always be students of different learning spee
   + Student that are lost, with you, and bored   
   + Advanced/Stretch labs and extensions of normal labs.
   + Encouraging faster students to teach and coach slower ones. ("Teaching is Learning")
-  
+  + Low barrier high threshhold labs and projects.
