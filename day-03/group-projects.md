@@ -3,6 +3,8 @@
 + What does effective group work look like and how do we facilitate it?
 
 + Ideation
+  + Set up purpose of the project (Building is the best way to learn)- Tinkering
+  + "Tinkering is what happens when you try something you don’t quite know how to do, guided by whim, imagination, and curiosity. When you tinker, there are no instructions - but there also no failures, no right or wrong ways of doing things. It’s about figuring out how things work and reworking them. Contraptions, machines, wildly mismatched objects working in harmony - this is the stuff of tinkering. Tinkering is, at its most basic, a process that marries play and inquiry."
   + Show previous examples (input/output projects)
   + Encourage quantity over quality of ideas early on
   + Set clear contraints (time, resources)
