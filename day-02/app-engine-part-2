@@ -1,0 +1,80 @@
+#### HTML Forms (Review)
+
+The form element has two attributes: _method_ and _action_.
+* The _method_ attribute specifies the HTTP method (GET or POST) to be used when submitting the forms. 
+  * When you use GET, the form data will be visible in the page's url
+  * When you use POST, the submitted data is not visible in the page address
+* The _action_ attribute tells which script to run or which page to return to once the submit button is pressed. Since the handler takes care of the response, don't worry about the action attribute and leave it blank. 
+
+```
+	<form method="post" action ="">
+		<p>Question 1: <input type="text" name="answer1"/></p>
+		<p>Question 2: <input type="text" name="answer2"/></p>
+		<p><input type="submit" value="Grade my Quiz"></p>
+	</form>
+```
+
+
+####Adding the  Post Method
+If you use a POST method in your template, you need to add a way for your handler to take care of those post requests.
+
+
+```python
+class MainHandler(webapp2.RequestHandler):
+    def get(self):
+    	main_template = jinja_environment.get_template('templates/main.html')
+    	self.response.out.write(main_template.render())
+    def post(self): ##here's the new POST method in the MainHandler
+    	self.response.out.write("You have submitted your quiz")
+```
+In the code above
+* When the handler receives a GET request, it's response is to render a template
+* When the handler receives a POST request, it's response is to write a message. 
+
+#### Adding a Results Template
+Most likely, you'll want to add a new HTML page that gets rendered after the user submits their form. 
+
+Add your results.html file in the templates folder. Then in your MainHandler, be sure to make sure your template gets rendered after a POST request.
+
+```python
+class MainHandler(webapp2.RequestHandler):
+    def get(self):
+    	main_template = jinja_environment.get_template('templates/main.html')
+    	self.response.out.write(main_template.render())
+    def post(self):
+    	results_template = jinja_environment.get_template('templates/complete.html')
+    	self.response.out.write(results_template.render())
+```
+
+####LINKING the HTML Form and the Handlers
+In order to grab the values from our form, we just need to take advantage of the self.request.get() method and grab our values for answer1 and answer2.
+
+
+```python
+class MainHandler(webapp2.RequestHandler):
+    def get(self):
+    	main_template = jinja_environment.get_template('templates/main.html')
+    	self.response.out.write(main_template.render())
+    def post(self):
+    	results_template = jinja_environment.get_template('templates/complete.html')
+    	##the variables that are sent to complete.html are user_answer_1 and user_answer_2
+    	##they contain the input values from the main.html form with names answer1 and answer2
+    	template_variables = {'user_answer_1': self.request.get('answer1'),
+    			  		'user_answer_2': self.request.get('answer2')}
+    	self.response.out.write(results_template.render(template_variables))
+```    		
+
+####Using the Template Variables
+When your template variables get passed from the handler to the template, you can use them by surrounding them with mustaches `{{ }}`
+```html
+<html>
+  <head>
+    <title>Quiz Results</title>
+  <head>
+  <body>
+    <h1> Your answers </h1>
+    <p> Your first answer was {{user_answer_1}} </p>
+    <p> Your second answer was {{user_answer_2}} </p>
+  <body>
+</html>
+```
