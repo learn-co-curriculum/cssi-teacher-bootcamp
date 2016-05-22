@@ -136,6 +136,19 @@ Students will change their count handler to display a template with the numbers 
 
 #### Adding jinja2 Logic
 Instead of writing 1-10 by hand, we can infuse logic directly into our template. 
-To do this, you need to use curly-brackets with parenthesis {% for number in range(1:10)%} to let templating engine know it should be interpreted as code.
+To do this, you need to use curly-brackets with parenthesis {% for number in range(1:11) %} to let templating engine know it should be interpreted as code.
 Each variable is in double mustaches {{number}}
-With separation of concerns, logic in the HTML should be limited to add/expand/duplicate HTML tag structure - anything else should be done in the controller
+```
+<!DOCTYPE  html>
+<html>
+  <head>
+    <title>Count!</title>
+  </head>
+  <body>
+    {% for number in range(1,11) %}
+    <p>{{number}}</p>
+    {% endfor %}
+  </body>
+</html>
+```
+With separation of concerns, logic in the HTML should be limited to add/expand/duplicate HTML tag structure - anything else should be done in the controller. 
