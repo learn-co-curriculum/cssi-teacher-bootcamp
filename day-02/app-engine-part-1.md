@@ -7,7 +7,7 @@
 
 ### Creating a New App
 * In Launcher, Create New app
-* App Name should be only lower case, no underscores!
+* App Name should be only lower case, no underscores! (they will have no name it pig-latin-name)
 * Pick Directory
 * Look at files together
 * Launch App
@@ -48,8 +48,8 @@ MainHandler and CountHandler both respond in different ways. Ask students:
 * What will CountHandler do? (print 1-10). 
 * What url will run the CountHandler? (/count)
 
-
-As a class, students will work in pairs to add at least one other  handler/route.
+STUDENT PRACTICE: Routes & Handlers
+Students will work in pairs to add a pigLatin handler, just like the count handler, they can add the method they wrote from Day 1.
 
 
 ### Templates
@@ -74,62 +74,45 @@ Your HTML page should be created in a new Templates folder
 
 
 #### Add Jinja2
-Add jinja 2 to .yaml file and main.py
-Controller needs to go get that page and combine it with any data - a templating engine is needed to do all this cleanly.
-Jinja2 is one of the more popular and most popular templating engines for Python
+1. Add jinja 2 to .yaml file and main.py
+    Controller needs to go get that page and combine it with any data - a templating engine is needed to do all this cleanly.
+    Jinja2 is one of the more popular and most popular templating engines for Python
+    ```
+     libraries:
+    - name: jinja2
+      version: latest
+    ```
+
+2. Import jinj2 and os in main.py
+
+    ```python  
+    import jinja2
+    import os
+    import webapp2
 ```
- libraries:
-- name: jinja2
-  version: latest
-```
-
-Edit the handler to grab your new HTML file:
-
-```python  
-import jinja2
-import os
-import webapp2
-```
-
-Jinja 2 needs to know where your HTML file is located. Set up Jinja directory to match current direction of the main.py file
-```python
-jinja_environment = jinja2.Environment(
-  loader=jinja2.FileSystemLoader(os.path.dirname(__file__)))#this little bit sets jinja's relative directory to match the directory name(dirname) of the current __file__, in this case, helloworld.py
-```
-
-Get the template you want by using the get_template method, and passing the path to the HTML file. Then render that template. Render is the magic verb that combines the HTML with any embedded logical code or data
-```python  
-import jinja2
-import os
-import webapp2
-
-jinja_environment = jinja2.Environment(
-  loader=jinja2.FileSystemLoader(os.path.dirname(__file__)))#this little bit sets jinja's relative directory to match the directory name(dirname) of the current __file__, in this case, helloworld.py
-
-class MainHandler(webapp2.RequestHandler):
-    def get(self):
+3. Set up Jinja Environment
+    Jinja 2 needs to know where your HTML file is located. Set up Jinja directory to match current direction of the main.py file
+    ```python
+    jinja_environment = jinja2.Environment(
+      loader=jinja2.FileSystemLoader(os.path.dirname(__file__)))#this little bit sets jinja's relative directory to match the directory name(dirname) of the current __file__, in this case, helloworld.py
+    ```
+4. Use get_template method on your jinja_environment path
+    Get the template you want by using the get_template method, and passing the path to the HTML file. Then render that template. Render is the magic verb that combines the HTML with any embedded logical code or data
+    ```python  
+    import jinja2
+    import os
+    import webapp2
+    
+    jinja_environment = jinja2.Environment(
+      loader=jinja2.FileSystemLoader(os.path.dirname(__file__)))#this little bit sets jinja's relative directory to match the directory name(dirname) of the current __file__, in this case, helloworld.py
+    
+    class MainHandler(webapp2.RequestHandler):
+        def get(self):
         hello_template = jinja_environment.get_template('templates/hello.html')
         self.response.write(hello_template.render())
-```
+    ```
+
+STUDENT PRACTICE: Rendering Templates
+Students will work in pairs to make Pig Latin template and render it.
 
 
-Students will change their count handler to display a template with the numbers 1-10.
-
-#### Adding jinja2 Logic
-Instead of writing 1-10 by hand, we can infuse logic directly into our template. 
-To do this, you need to use curly-brackets with parenthesis {% for number in range(1:11) %} to let templating engine know it should be interpreted as code.
-Each variable is in double mustaches {{number}}
-```
-<!DOCTYPE  html>
-<html>
-  <head>
-    <title>Count!</title>
-  </head>
-  <body>
-    {% for number in range(1,11) %}
-    <p>{{number}}</p>
-    {% endfor %}
-  </body>
-</html>
-```
-With separation of concerns, logic in the HTML should be limited to add/expand/duplicate HTML tag structure - anything else should be done in the controller. 
