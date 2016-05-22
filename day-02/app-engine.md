@@ -2,18 +2,22 @@
 
 ### GAE as a Connector
 * Platform as a Service (Paas) to build/run applications hosted on Google's servers
-* App Engine connects the back-end (the Python scripts) and front-end (the HTML/CSS/JavaScript) for you with minimal work on your end. 
+* App Engine connects the back-end (the Python scripts) and front-end (the HTML/CSS/JavaScript) for you with minimal work on your end
+
+
 ### Creating a New App
-In Launcher, Create New app
-App Name should be only lower case, no underscores!
-Pick Directory
-Look at files together
-Launch App
-Explain Ports
+* In Launcher, Create New app
+* App Name should be only lower case, no underscores!
+* Pick Directory
+* Look at files together
+* Launch App
+* Explain Ports
 
 ### Responding to Requests using Handlers and Routes
-User enters url or presses button
-Your controller needs to respond (based on it it was a get or a post)
+A user can make a request (ask about the two different kinds) and we need to "handle" them, based on which type of request it was and which resource it was trying to access.
+
+Routes handles the urls and decide which Handler to Execute
+Within the handler, you can define a get(self) or a get(post) method.
 
 ```python
 class MainHandler(webapp2.RequestHandler):
@@ -31,10 +35,10 @@ app = webapp2.WSGIApplication([
 ], debug=True)
 ```
 
-MainHandler and CountHandler both respond in different ways. 
-Ask what MainHandler will do? (displays "Hello World") 
-What will CountHandler do? (print 1-10). 
-What url will run the CountHandler? (/count)
+MainHandler and CountHandler both respond in different ways. Ask students:
+* What MainHandler will do? (displays "Hello World") 
+* What will CountHandler do? (print 1-10). 
+* What url will run the CountHandler? (/count)
 
 
 As a class, students will work in pairs to add at least one other  handler/route.
