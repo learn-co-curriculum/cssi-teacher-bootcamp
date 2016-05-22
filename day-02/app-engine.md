@@ -19,6 +19,24 @@ A user can make a request (ask about the two different kinds) and we need to "ha
 Routes handles the urls and decide which Handler to Execute
 Within the handler, you can define a get(self) or a get(post) method.
 
+```HTML
+<form action="" method="get">
+      <button name="button-pressed" value="get">Submit Get Request</button>
+    </form>
+    <form action="" method="post">
+      <button name="button-pressed" value="post">Submit Post Request</button>
+    </form>
+```
+
+```
+class PointlessHandler(webapp2.RequestHandler):
+    def get(self):
+        self.response.write('You pressed the GET button!') 
+    def post(self):
+        self.response.write('You pressed the POST button!') 
+
+```
+
 ```python
 class MainHandler(webapp2.RequestHandler):
     def get(self):
@@ -101,7 +119,7 @@ jinja_environment = jinja2.Environment(
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         hello_template = jinja_environment.get_template('templates/hello.html')
-        self.response.out.write(hello_template.render())
+        self.response.write(hello_template.render())
 ```
 
 
