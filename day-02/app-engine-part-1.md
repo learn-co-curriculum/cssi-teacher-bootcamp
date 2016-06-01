@@ -75,6 +75,7 @@ Your HTML page should be created in a new Templates folder
 
 #### Add Jinja2
 1. Add jinja 2 to .yaml file and main.py
+
     Controller needs to go get that page and combine it with any data - a templating engine is needed to do all this cleanly.
     Jinja2 is one of the more popular and most popular templating engines for Python
     ```
@@ -91,13 +92,15 @@ Your HTML page should be created in a new Templates folder
     import webapp2
 ```
 3. Set up Jinja Environment
-    Jinja 2 needs to know where your HTML file is located. Set up Jinja directory to match current direction of the main.py file
+   
+     Jinja 2 needs to know where your HTML file is located. Set up Jinja directory to match current direction of the main.py file
     ```python
     jinja_environment = jinja2.Environment(
       loader=jinja2.FileSystemLoader(os.path.dirname(__file__)))#this little bit sets jinja's relative directory to match the directory name(dirname) of the current __file__, in this case, helloworld.py
     ```
 4. Use get_template method on your jinja_environment path
-    Get the template you want by using the get_template method, and passing the path to the HTML file. Then render that template. Render is the magic verb that combines the HTML with any embedded logical code or data
+   
+     Get the template you want by using the get_template method, and passing the path to the HTML file. Then render that template. Render is the magic verb that combines the HTML with any embedded logical code or data
     ```python  
     import jinja2
     import os
