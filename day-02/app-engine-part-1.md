@@ -14,10 +14,10 @@
 * Explain Ports
 
 ### Responding to Requests using Handlers and Routes
-A user can make a request (ask about the two different kinds) and we need to "handle" them, based on which type of request it was and which resource it was trying to access.
+A user can make a request (ask students about the two different kinds) and we need to "handle" them, based on which type of request it was and which resource it was trying to access.
 
-Routes handles the urls and decide which Handler to Execute
-Within the handler, you can define a get(self) or a get(post) method.
+* Routes read the urls and decide which handler to execute
+* Within the handler, you can define a get(self) or a get(post) method.
 
 ```
 class PointlessHandler(webapp2.RequestHandler):
@@ -48,7 +48,7 @@ MainHandler and CountHandler both respond in different ways. Ask students:
 * What will CountHandler do? (print 1-10). 
 * What url will run the CountHandler? (/count)
 
-STUDENT PRACTICE: Routes & Handlers
+####STUDENT PRACTICE: Routes & Handlers
 Students will work in pairs to add a pigLatin handler, just like the count handler, they can add the method they wrote from Day 1.
 
 
@@ -112,7 +112,7 @@ Your HTML page should be created in a new Templates folder
         self.response.write(hello_template.render())
     ```
 
-STUDENT PRACTICE: Rendering Templates
+####STUDENT PRACTICE: Rendering Templates
 Students will work in pairs to make Pig Latin template and render it.
 
 
