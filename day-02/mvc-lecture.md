@@ -12,7 +12,7 @@ MVC is the basic framwork that describes all apps, how a user is able to interac
 
 ### Restaurant Analogy
 * Kitchen - Models - stores food (data), prepares the right food (data) to send back
-* Customer - Views -  asks questions about specials (Get Request), submits order (Post request)
+* Menu - Views -  User can asks questions about specials (Get Request), submits order (Post request)
 * Waiter - Controller - ferries data back and forth
 * Requests/Responses
   * Get Request - Customer asks about specials (Waiter needs to response to patron - here are pictures, or specials)
