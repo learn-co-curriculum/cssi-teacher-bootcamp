@@ -6,7 +6,8 @@ In hello.html, instead of Hello World, write Hello {{ name }}. Now our page will
 
 ### Passing Variables to the Template
 The .render() method takes an optional variable where you can pass a dictionary of key:value pairs
-The key is always in quotes, and should be the same as the name in the template
+The key is the name of the variable being passed (a string), and should be the same as the name in the template.
+The value can hold any datatype
 ```python
 class HelloHandler(webapp2.RequestHandler):
     template = jinja_environment.get_template('templates/hello.html')
